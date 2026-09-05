@@ -6,7 +6,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background: linear-gradient(135deg, #b8d8f8, #d8c4f0, #f2b6c6);
+    min-height: 100vh;
 }
 
 .container {
@@ -57,8 +58,9 @@ h1 {
     gap: 20px;
     padding: 15px;
     margin-bottom: 15px;
-    background-color: white;
+    background-color: rgb(203, 227, 203);
     border: 1px solid #ddd;
+    border-radius: 12px;
 }
 
 .song-card img {
