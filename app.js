@@ -16,7 +16,7 @@ const base_URL= "https://api.audius.co/v1/tracks/search";
 const getDetails = async ()=>{
 
     const song = input.value;
-    const new_URL = `https://api.audius.co/v1/tracks/search?query=${encodeURIComponent(song)}&limit=10`;
+    const new_URL = `https://api.audius.co/v1/tracks/search?query=${encodeURIComponent(song)}&limit=20`;
 
     const response = await fetch(new_URL);
     const result = await response.json();
