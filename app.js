@@ -5,15 +5,12 @@ const song_card = document.querySelector(".song-card");
 const search_Result = document.querySelector("#results");
 const search_result_count = document.querySelector("h2");
 
-
-const base_URL= "https://api.audius.co/v1/tracks/search";
-
 const getDetails = async ()=>{
 
     const song = input.value;
-    const new_URL = `https://api.audius.co/v1/tracks/search?query=${encodeURIComponent(song)}&limit=20`;
+    const base_URL = `https://api.audius.co/v1/tracks/search?query=${encodeURIComponent(song)}&limit=20`;
 
-    const response = await fetch(new_URL);
+    const response = await fetch(base_URL);
     const result = await response.json();
 
     result.data.forEach((track)=>{
